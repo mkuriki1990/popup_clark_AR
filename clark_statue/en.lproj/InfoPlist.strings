@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  clark_statue
+
+  Created by Murahashi Kuriki on 2021/06/03.
+  
+*/
+NSCameraUsageDescription = "This App uses the camera feature for the AR experience";
+CFBundleDisplayName = "Popup! Clark in Hokudai";

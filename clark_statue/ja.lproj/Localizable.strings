@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  clark_statue
+
+  Created by Murahashi Kuriki on 2021/06/03.
+  
+*/
+
+"thank you for you playing" = "あそんでくれてありがとう！";
+"how to play" = "あそびかた";
+"how to play content" = "黄色の点で検知された平面をタップ！\n（水平な面しか反応しません）\n\n詳細は右上の'?'から";
+"gold indicate" = "100 CL 記念に金のクラーク像が建てられるようになりました！\n（左上のスイッチで切替できます）";

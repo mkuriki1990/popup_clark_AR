@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  clark_statue
+
+  Created by Murahashi Kuriki on 2021/06/03.
+  
+*/
+NSCameraUsageDescription = "アプリはAR機能のためにカメラを使用します。";
+CFBundleDisplayName = "とびだせ！クラーク像";
+// NSPhotoLibraryUsageDescription = "アプリはPhotoLibraryで選択した写真を編集します。";
+// NSPhotoLibraryAddUsageDescription = "アプリはPhotoLibraryに写真を保存します。";

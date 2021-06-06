@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="clark_statue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="instruction_msg" text="Tap anywhere on the floor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2J-lW-Zbe">
+                                <rect key="frame" x="54.916251102170463" y="425.21612097530897" width="300" height="50.000000000000021"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cp_label" text="Clark Level: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc7-8e-UMX">
+                                <rect key="frame" x="20" y="69" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="nWM-Uo-tQX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sg-VW-q6H">
+                                <rect key="frame" x="364" y="69" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <segue destination="JLv-LI-odn" kind="show" id="hUb-wl-U0P"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" restorationIdentifier="gold_switch" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDH-eJ-wiJ">
+                                <rect key="frame" x="20" y="84" width="49" height="31"/>
+                                <color key="onTintColor" systemColor="systemYellowColor"/>
+                                <connections>
+                                    <action selector="gold_change_switchWithSender:" destination="BV1-FR-VrT" eventType="valueChanged" id="auo-4C-FNg"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Murahashi Kuriki 2021, CC BY-SA-NC 4.0" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zZs-w7-l2O">
+                                <rect key="frame" x="20" y="833" width="374" height="29"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="hU6-vH-rau"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQf-fX-ddS">
+                                <rect key="frame" x="150" y="796.5" width="114" height="30"/>
+                                <state key="normal" title="Clear All Statues"/>
+                                <connections>
+                                    <action selector="all_node_remove:" destination="BV1-FR-VrT" eventType="touchUpInside" id="O5U-eq-1KD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="5Sg-VW-q6H" secondAttribute="bottom" constant="-129" id="1mM-uF-KM2"/>
+                            <constraint firstItem="kc7-8e-UMX" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="5YD-Vc-t97"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="uDH-eJ-wiJ" secondAttribute="bottom" constant="-115" id="7E3-pQ-Zxr"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="zZs-w7-l2O" secondAttribute="bottom" id="HBI-Bj-bKQ"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="uDH-eJ-wiJ" secondAttribute="trailing" constant="-67" id="HTM-pf-unc"/>
+                            <constraint firstItem="YQf-fX-ddS" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="Ofe-Qe-PgB"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="5Sg-VW-q6H" firstAttribute="leading" secondItem="BrB-h1-WRS" secondAttribute="trailing" constant="-50" id="dBQ-aE-ii8"/>
+                            <constraint firstItem="kc7-8e-UMX" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="25" id="dTq-bC-OYF"/>
+                            <constraint firstItem="kc7-8e-UMX" firstAttribute="width" secondItem="BrB-h1-WRS" secondAttribute="width" multiplier="0.903382" id="gSB-zc-bDu"/>
+                            <constraint firstItem="zZs-w7-l2O" firstAttribute="firstBaseline" secondItem="YQf-fX-ddS" secondAttribute="baseline" constant="16" symbolType="layoutAnchor" id="jO6-Ls-JE4"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="zZs-w7-l2O" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="ttm-Px-EJa"/>
+                            <constraint firstItem="zZs-w7-l2O" firstAttribute="width" secondItem="BrB-h1-WRS" secondAttribute="width" multiplier="0.903382" id="yBw-Wp-kaD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cp_label" destination="kc7-8e-UMX" id="dQh-Nl-ETP"/>
+                        <outlet property="erase_button" destination="YQf-fX-ddS" id="1Fz-gG-WxN"/>
+                        <outlet property="gold_switch" destination="uDH-eJ-wiJ" id="gve-vN-VA0"/>
+                        <outlet property="instruction_label" destination="k2J-lW-Zbe" id="GOw-wq-tib"/>
+                        <outlet property="license_textview" destination="zZs-w7-l2O" id="Hg0-xw-BsQ"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="47.544642857142854"/>
+        </scene>
+        <!--helpViewController-->
+        <scene sceneID="psk-C3-VKy">
+            <objects>
+                <viewController title="helpViewController" id="JLv-LI-odn" customClass="HelpViewController" customModule="clark_statue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAG-3d-9R7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsp-gR-RRA">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text"># About App
+"Popup! Clark in Hokudai" is AR app using the bust of Clark statue in Hokkaido University.
+
+# How to Play
+Tap floor somewhere indicated by the yellow dot to build a statue. 
+"Clark Level" shows the number of Clark statues you have constructed. If CL exceeds 100, you can see...?
+
+# Caution
+The number of Clark statues that can be displayed at one time depends on the performance of your device. 
+
+# Disclaimer
+We are not responsible for any damage caused by the use of this App.
+
+Please use this App with due care for the safety of your surroundings.
+
+# Reference
+Please see my blog (Japanese) for more information about 3D models. "Hokkaido University's statue of Clark could be open data"
+
+Swipe down to hide this message</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0RJ-5j-E6m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rsp-gR-RRA" firstAttribute="centerX" secondItem="0RJ-5j-E6m" secondAttribute="centerX" id="7eE-LZ-WZs"/>
+                            <constraint firstItem="Rsp-gR-RRA" firstAttribute="height" secondItem="QAG-3d-9R7" secondAttribute="height" multiplier="0.971496" id="T92-EC-4kO"/>
+                            <constraint firstItem="Rsp-gR-RRA" firstAttribute="width" secondItem="QAG-3d-9R7" secondAttribute="width" multiplier="0.903382" id="rkz-zk-H6V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k8T-CR-HNc"/>
+                    <connections>
+                        <outlet property="helpTextView" destination="Rsp-gR-RRA" id="TwH-pX-7t5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTn-BR-F0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="47.544642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

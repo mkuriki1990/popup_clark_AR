@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  clark_statue
+
+  Created by Murahashi Kuriki on 2021/06/03.
+  
+*/
+
+"how to play" = "How to Play";
+"how to play content" = "Tap the plane detected by the yellow dots!\n(Only respond on horizontal plane)\n\nFor more information, tap '?' in the upper right corner";
+"thank you for you playing" = "Thank you for playing!";
+"gold indicate" = "Now you can construct The Golden Clark to commemorate 100 Clark Level!\n(can be switched with the button in the upper left corner)";
